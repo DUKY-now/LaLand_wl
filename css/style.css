@@ -69,7 +69,7 @@ body {
   color: var(--color-text);
   overflow-x: hidden;
 
-  background-image: url('../assets/images/laland_Background.png');
+  background-image: url('../assets/images/LaLand_Background.png');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
