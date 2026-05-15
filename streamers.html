@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streamers</title>
+<link rel="stylesheet" href="/css/style.css">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/images/laland_S.png">
+</head>
+
+<body>
+
+<header data-include="components/navbar.html"></header>
+<script src="js/include.js"></script>
+
+<main>
+
+<section class="hero">
+<h1 id="couleur-streamer">Streamers</h1>
+<h2>Nos créateurs</h2>
+</section>
+
+<section class="hero">
+<div>
+    <p class="titre">Pour toutes demande pour devenir streamer, merci de remplir le formulaire sur notre discord</p>
+    <a href="https://discord.com/channels/1473335211684008230/1493589249621098647" target="_blank" rel="noopener noreferrer" class="btn">Ticket</a>
+</div>
+</section>
+
+<div id="streamers" class="cards"></div>
+
+<script>
+const streamers = ["sdukynow", "teels1337","T_ICEMAN_Kasansky"];
+
+async function loadStreamers() {
+    const container = document.getElementById("streamers");
+    container.innerHTML = "";
+
+    for (const name of streamers) {
+        try {
+            const res = await fetch(`https://decapi.me/twitch/uptime/${name}`);
+            const text = await res.text();
+
+            if (text.includes("offline")) continue;
+
+            container.innerHTML += `
+                <div class="card">
+                    <a href="https://twitch.tv/${name}" target="_blank">
+                        <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_${name}-300x200.jpg">
+                        <p class="btn-stream">Regarder ${name} </p>
+                    </a>
+                </div>
+            `;
+        } catch (err) {
+            console.log(err);
+        }
+    }
+}
+
+loadStreamers();
+setInterval(loadStreamers, 60000);
+</script>
+
+</main>
+
+<footer data-include="components/footer.html"></footer>
+
+</body>
+</html>

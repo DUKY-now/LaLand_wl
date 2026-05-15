@@ -1,0 +1,73 @@
+Rajouter sur la page géographie la carte du serveur avec les lieux qui ont un importance dans le lore du serveur
+
+
+Structure du dossier Lore :
+/lore
+│
+├── index.html                → Vue globale + résumé
+│
+├── histoire.html            → Origines + communautés
+├── hargrove.html            → Hal + système
+├── foundation.html          → Opération principale
+├── meridian.html            → Blanchiment + twist
+│
+├── personnages/
+│   ├── index.html           → Présentation générale
+│   ├── edward.html
+│   ├── victoria.html
+│   └── preston.html
+│
+├── groupes/
+│   ├── index.html
+│   ├── nsk.html
+│   ├── carnales.html
+│   └── freeborn.html
+│
+├── institutions.html        → Police / justice
+├── geographie.html          → Zones RP
+│
+├── chronologie.html         → Timeline datée
+├── actuel.html              → Événements en cours
+│
+└── mysteres.html            → Chiliad / Reeves / secrets
+
+Base pour une page
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>laland WL</title>
+<link rel="stylesheet" href="../css/style.css">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../assets/images/laland_S.png">
+</head>
+
+<body>
+
+<header data-include="/components/navbar.html"></header>
+<script src="/js/include.js"></script>
+
+
+
+
+
+<footer data-include="/components/footer.html"></footer>
+
+</body>
+</html>
+
+Commande pour merge dev vers main:
+git checkout main
+git pull origin main
+git merge dev
+git push origin main
+
+et pour déployer sur cloudflare pages:
+npx wrangler pages deploy .
+
+Connecter wrangler au compte cloudflare:
+npx wrangler login
+
+sinon pas de deploy possible donc j'ai remis en deploy auto en attendant de régler le problème de connexion à cloudflare via wrangler
