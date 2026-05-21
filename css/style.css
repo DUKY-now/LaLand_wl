@@ -69,7 +69,7 @@ body {
   color: var(--color-text);
   overflow-x: hidden;
 
-  background-image: url('../assets/images/Laland_Background.png');
+  background-image: url('/assets/images/Laland_Background.png');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
@@ -259,6 +259,14 @@ header {
 
 .hero .btn {
   margin: 10px auto;
+}
+
+.btn-retour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
 }
 
 /* ============================
