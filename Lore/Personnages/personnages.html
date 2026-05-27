@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LaLand WL</title>
+<title>LaLand WL - Personnages</title>
 <link rel="stylesheet" href="/css/style.css">
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="/assets/images/Laland_L.png">
@@ -14,152 +14,95 @@
     <script src="/js/include.js"></script>
 <header data-include="/components/navbar.html"></header>
 
-
 <section class="hero">
-<h1>Section | Personnages</h1>
+<h1>Personnages Importants</h1>
 <a href="../lore.html" class="btn">Retourner au Lore</a>
 </section>
-
 
 <section>
 <div class="scanline"></div>
 <div class="container">
-            <!-- FILTERS -->
-            <div class="filters">
-                <h2>Choisir un Dossier</h2>
-<button onclick="filterCategory('hargrove')">> HARGROVE CAPITAL</button>
-<button onclick="filterCategory('police')">> FORCES DE L’ORDRE</button>
-<button onclick="filterCategory('gang')">> ORGANISATIONS</button>
-<button onclick="filterCategory('disparu')">> DISPARU</button>
-<button onclick="filterCategory('all')">> TOUT</button>
+    <!-- FILTERS -->
+    <div class="filters">
+        <h2>Choisir un Groupe</h2>
+        <button onclick="filterCategory('nord-ville')">> NORD DE LA VILLE</button>
+        <button onclick="filterCategory('sud')">> SUD</button>
+        <button onclick="filterCategory('nord-desert')">> NORD (DÉSERT)</button>
+        <button onclick="filterCategory('institutions')">> INSTITUTIONS</button>
+        <button onclick="filterCategory('all')">> TOUT</button>
+    </div>
+    
+    <!-- PANEL -->
+    <div class="panel">
 
-            </div>
-            <!-- PANEL -->
-            <div class="panel">
-                <div class="card hargrove">
-                    <h2>Famille Hargrove</h2>
-                    <h3>Edward Hargrove Jr.</h3>
-                                        <h2>Profil</h2>
-<p>Juriste de formation, Yale 1988. A passé sa vie à être le fils raisonnable — celui qui maintenait les façades pendant
-que son père construisait l'empire. Connaît les grandes lignes, pas les détails. Cette ignorance partielle le rend
-dangereux : il prend des décisions majeures sans en comprendre les mécanismes. Extérieurement : PDG respecté,
-marié, deux enfants à l'université, conseils d'administration culturels, interviews sur le « capitalisme conscient ».
-Intérieurement : paralysé par la peur, incapable de trancher les conflits familiaux, convaincu que sa sœur orchestre sa
-destruction depuis des années. Dort peu. Boit plus qu'il ne le reconnaît.</p>
-                </div>
+        <!-- NORD DE LA VILLE -->
+        <div class="card nord-ville">
+            <h2>Nord de la Ville</h2>
+            <h3>Famille & Entreprises Influentes</h3>
+            <p>Les familles riches de Vinewood, Rockford Hills et Richman qui contrôlent l'économie de Los Santos. Politiciens, célébrités, entrepreneurs. Leurs noms ne sont généralement pas connus des habitants du sud - ils n'ont pas besoin de l'être.</p>
+            <h3>Médias & Communications</h3>
+            <p>Propriétaires de chaînes d'information, journalistes influents. Contrôlent la narration publique. Dictent ce que la population doit penser être une menace et ce qui est acceptable.</p>
+            <h3>Système Judiciaire Privé</h3>
+            <p>Avocats prestigieux, juges "amis" de la famille. Une justice à deux vitesses : une pour les riches, une autre pour les pauvres. Les crimes majeurs disparaissent derrière des technicités légales.</p>
+        </div>
 
+        <!-- SUD -->
+        <div class="card sud">
+            <h2>Le Sud - Les Gangs</h2>
+            <h3>Chefs de Quartier - Davis</h3>
+            <p>Contrôlent l'économie illégale de Davis. Protection du quartier, trafic de drogue, application des règles locales. Figures respectées - pas aimées, mais respectées. Beaucoup ont grandi avec les habitants qu'ils gouvernent maintenant.</p>
+            <h3>Chefs de Quartier - Rancho</h3>
+            <p>Similaire à Davis mais avec ses propres dynamiques. Alliances et rivalités fluctuantes. Parfois les gangs travaillent ensemble contre le nord, parfois ils se font la guerre pour le contrôle local.</p>
+            <h3>Chefs de Quartier - Strawberry</h3>
+            <p>Le quartier le plus jeune et le plus agressif. Les chefs y sont plus jeunes aussi - moins de patience pour la diplomatie, plus enclins à la violence directe. Points chauds réguliers d'affrontement avec la police.</p>
+            <h3>Chefs de Quartier - Chamberlain Hills</h3>
+            <p>Prétendument neutres, officiellement alignés sur un équilibre entre les forces. Officieusement, certains négocient discrètement avec d'autres territoires - arrangements que le reste du sud ignorerait s'il les découvrait.</p>
+            <h3>Femmes du Quartier</h3>
+            <p>Mères, grand-mères, anciennes. Le vrai pouvoir du sud. Les gangs obéissent aux anciennes - elles décident qui rejoint, qui part, qui vit, qui meurt. Les jeunes hommes se battent pour l'honneur, mais les femmes gardent l'ordre.</p>
+        </div>
 
-                <div class="card hargrove">
-                    <h2>Famille Hargrove</h2>
-                    <h3>Victoria Hargrove-Nash</h3>
-                    <h2>Profil</h2>
-<p>La seule des trois à avoir compris ce que son père construisait — et à vouloir l'achever. Là où Hal voulait posséder
-San Andreas discrètement, Victoria veut le faire savoir. Pas publiquement. Mais dans les cercles qui comptent : les
-juristes qui rédigent les lois, les banquiers qui structurent les dettes, les juges qui interprètent les textes. Mariée au
-sénateur Robert Nash dans une alliance stratégique mutuellement comprise. Ils n'ont pas dîné seuls depuis 2019.
-</p>
-                </div>
+        <!-- NORD DÉSERT -->
+        <div class="card nord-desert">
+            <h2>Le Nord - Leaders du Désert</h2>
+            <h3>Paleto Bay</h3>
+            <p>Anciens, terriens, ultra-conservateurs. Contrôlent les montagnes de Chiliad et les accès à Paleto. Vivent sur leurs terres depuis des décennies. Repoussent activement toute intrusion du gouvernement.</p>
+            <h3>Sandy Shores</h3>
+            <p>Les plus dangereux. Anciens motards reconvertis, vétérans, opérateurs sophistiqués. Production industrielle de drogue. Le leadership est brutal et efficace. Les loyautés s'achètent, ne se donnent pas.</p>
+            <h3>Grapeseed</h3>
+            <p>Agriculteurs de façade, criminel de réalité. Excellents pour passer inaperçus. Opèrent les trafics entre les territoires. Peu nombreux mais extrêmement efficaces. Invisibles - c'est leur plus grande force.</p>
+            <h3>Motards Indépendants</h3>
+            <p>Groupes itinérants, basés nulle part officiellement. Transport de marchandises entre les trois territoires. Neutres par nécessité. Extrêmement dangereux quand ils choisissent de prendre parti.</p>
+        </div>
 
-                <div class="card hargrove">
-                    <h2>Famille Hargrove</h2>
-                    <h3>Preston Hargrove</h3>
-                                        <h2>Profil</h2>
-<p>Officiellement : directeur des relations communautaires de Hargrove Capital — un poste créé pour lui par Edward,
-qui ne signifie rien, conçu pour le garder occupé et éloigné des vrais dossiers. Réellement : un homme qui s'est noyé
-dans la cocaïne et dans le sentiment d'être le seul à voir la vérité sur sa famille. Le seul des trois à avoir réellement
-passé du temps dans les quartiers — pas par idéologie, par addiction. Imprévisible, autodestructeur, et
-paradoxalement le personnage le plus honnête de la famille.</p>
-                </div>
-                    
-                <div class="card police">
-                    <h2>Service Public</h2>
-                    <h3>Commissaire Alan Broward</h3>
-                                        <h2>Profil</h2>
-<p>35 ans de carrière. L'homme le plus difficile à catégoriser de tout San Andreas. N'est pas dans la poche de Hargrove
-— Edward l'a essayé une fois et s'est fait reconduire poliment à la sortie. Mais Broward a ses propres codes, ses
-propres loyautés, ses propres zones d'ombre. Couvre certaines choses pour « maintenir l'ordre » selon sa définition
-personnelle. Croit en une version de San Andreas qui n'existe peut-être plus.
-</p>
-                </div>
+        <!-- INSTITUTIONS -->
+        <div class="card institutions">
+            <h2>Forces de L'Ordre & Gouvernement</h2>
+            <h3>Commissaire LSPD</h3>
+            <p>Homme de 60+ ans, 35 ans de carrière. Conscience du chaos mais incapable ou refusant d'agir réellement. Connaît les limites de son autorité et les accepte. Pas ouvertement corrompu - juste... gérant le chaos du mieux possible.</p>
+            <h3>Sheriff Blaine County</h3>
+            <p>Élu local, pragmatique au-delà de l'immoralité. Arrangement tacite avec les groupes du désert. Ne pose pas de questions sur certaines activités en échange de services rendus. Prétend que c'est de la gouvernance locale.</p>
+            <h3>Procureur District</h3>
+            <p>Ambitieux, brillant, commençant à voir des patterns troublants. Note les dossiers fermés sans raison, les pressions inexplicables. Pas encore compris le système entier - mais commence à avoir peur de le découvrir.</p>
+            <h3>Politiciens Locaux</h3>
+            <p>Entre incompétence et complaisance. Promettent des changements qu'ils ne peuvent pas livrer. Certains sont sincères mais paralysés. D'autres se sont juste accordé avec le système tel qu'il existe.</p>
+        </div>
 
-                <div class="card police">
-                    <h2>Service Public</h2>
-                    <h3>Sheriff Dale Weston</h3>
-                                        <h2>Profil</h2>
-<p>Élu trois fois. Maintien au pouvoir conditionné à sa capacité à ne pas voir certaines choses. Paiement en services, pas
-en cash. N'est pas un monstre — convaincu d'être pragmatique. C'est peut-être pire.
-</p>
-                </div>
+        <!-- INFORMATEURS & MARGINAUX -->
+        <div class="card all">
+            <h2>Les Figures Marginales</h2>
+            <h3>Informateurs & Mouches</h3>
+            <p>Habitants des trois territoires qui ont choisi d'être au carrefour. Vendent des informations à qui paie. Généralement des criminels mineurs ou des flics corrompus qui cherchent à augmenter leurs revenus.</p>
+            <h3>Transporteurs Indépendants</h3>
+            <p>Passeurs, chauffeurs, livreurs. Travaillent pour le plus offrant sans vraiment prendre parti. Inestimables parce qu'acceptés par tous les trois territoires - du moins tant qu'ils restent neutres.</p>
+            <h3>Médiateurs Non-Officiels</h3>
+            <p>Anciens criminels, religieux, figures charismatiques. Parfois invités pour négocier entre les camps. Leur utilité réside uniquement dans leur capacité à être acceptés par les trois côtés.</p>
+            <h3>Journalistes Indépendants</h3>
+            <p>Ceux qui tentent de couvrir la "vraie" histoire de Los Santos au-delà de la narration contrôlée. Dangereux pour le nord de la ville. Généralement ignorés ou menacés. Rares et courageux - ou fous.</p>
+        </div>
 
-                <div class="card police">
-                    <h2>Service Public</h2>
-                    <h3>Rachel Kim</h3>
-                                        <h2>Profil</h2>
-<p>Ambitieuse, brillante, idéaliste à l'origine. A pris le poste en se promettant de « vraiment changer les choses ».
-Commence à comprendre que chaque dossier qu'elle ouvre crée des résistances qu'elle ne comprend pas — des
-pressions plus diffuses que la corruption ordinaire.</p>
-                </div>
-
-
-                <div class="card police">
-                    <h2>Service Public</h2>
-                    <h3>Darnell Brooks</h3>
-                                        <h2>Profil</h2>
-<p>Élu local sincère. Engagé, fatigué. A donné son accord au programme Hargrove pour Davis en échange de la
-rénovation d'une école de son district. Ne sait pas ce qu'il a signé. Son avocat non plus.</p>
-                </div>
-
-
-
-                <div class="card gang">
-                    <h2>Menace</h2>
-                    <h3>El Viejo</h3>
-                                        <h2>Profil</h2>
-<p>Réputation irréprochable dans les cercles des Carnales : calme, juste, stratège. A grandi dans Rancho. A survécu à
-trois guerres internes et à deux tentatives d'assassinat. Considère qu'il dirige une famille élargie, pas un gang. Tient un
-commerce de façade dans Rancho — une carrosserie ouverte depuis 28 ans.
-</p>
-                </div>
-
-                <div class="card gang">
-                    <h2>Menace</h2>
-                    <h3>Dirtbag decker</h3>
-                    <h2>Profil</h2>
-<p>Vétéran de deux conflits. Ancien du Lost MC. Le personnage le plus imprévisible de tout l'écosystème criminel de
-San Andreas. Pas parce qu'il est fou — parce qu'il est logique selon un code que personne d'autre ne partage. Survit
-dans le désert depuis vingt ans dans des conditions que personne d'autre ne supporterait.</p>
-                </div>
-
-                <div class="card disparu">
-                    <h2>Disparu</h2>
-                    <h3>Thomas Reeves</h3>
-                    <h2>Profil</h2>
-<p>Analyste senior chez Meridian. L'une des trois personnes vivantes à connaître une partie significative du mécanisme
-de blanchiment. « En déplacement professionnel » selon son employeur. Sa petite amie a signalé sa disparition. Le
-dossier a été ouvert puis transféré. Transféré où ? Elle n'a pas pu l'obtenir.</p>
-
-            </div>
+    </div>
+</div>
 </section>
-
-
-<script>
-function filterCategory(cat) {
-    const cards = document.querySelectorAll('.card');
-
-    cards.forEach(card => {
-        if (cat === 'all') {
-            card.style.display = 'block';
-        } else {
-            if (card.classList.contains(cat)) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        }
-    });
-}
-</script>
-
 
 <footer data-include="/components/footer.html"></footer>
 </body>
