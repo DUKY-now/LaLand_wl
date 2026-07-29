@@ -327,6 +327,15 @@ footer {
   color: var(--color-footer-text);
 }
 
+/* Footer uniquement accueil */
+.footer-home-only {
+    display: none;
+}
+
+.home .footer-home-only {
+    display: block;
+}
+
 /* ============================
    STREAM BUTTON
 ============================ */
