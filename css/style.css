@@ -330,6 +330,7 @@ footer {
 /* Footer uniquement accueil */
 .footer-home-only {
     display: none;
+    color: white
 }
 
 .home .footer-home-only {
