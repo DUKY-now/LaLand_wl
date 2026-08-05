@@ -228,6 +228,23 @@ header {
   transition: all var(--transition-base);
 }
 
+select.btn {
+  background: rgba(0, 0, 0, 0.32);
+  color: var(--color-text);
+  border-color: rgba(171, 142, 22, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+select.btn option {
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--color-text);
+}
+
+select.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(171, 142, 22, 0.18);
+}
+
 .btn::before {
   content: "";
   position: absolute;
